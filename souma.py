@@ -15,7 +15,7 @@ async def my_background_task():
     while not client.is_closed:
         counter += 1
         await client.send_message(channel, counter)
-        await asyncio.sleep(1800)
+        await asyncio.sleep(900)
  
 client.loop.create_task(my_background_task())
 token = os.environ.get("DISCORD_BOT_SECRET")
