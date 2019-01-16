@@ -5,11 +5,13 @@ client = discord.Client()
 
 async def my_background_task():
     await client.wait_until_ready()
-    channel = discord.Object(id='531423912538537995')
+    counter = 0
+    channel = discord.Object(id='channel_id_here')
     while not client.is_closed:
-        await client.send_message(channel, "sword")
-        await asyncio.sleep(20)
-        
+        counter += 1
+        await client.send_message(channel, counter)
+        await asyncio.sleep(10) # task runs every 60 seconds
+
 @client.event
 async def on_ready():
     print('Logged in as')
