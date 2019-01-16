@@ -9,13 +9,6 @@ async def my_background_task():
     while not client.is_closed:
         await client.send_message(channel, "sword")
         await asyncio.sleep(20)
-
-@client.event
-async def on_ready():
-    print('Logged in as')
-    print(client.user.name)
-    print(client.user.id)
-    print('------')
  
 client.loop.create_task(my_background_task())
 token = os.environ.get("DISCORD_BOT_SECRET")
