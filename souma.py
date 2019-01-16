@@ -9,7 +9,7 @@ async def my_background_task():
     channel = discord.Object(id='531423912538537995')
     while not client.is_closed:
         await client.send_message(channel, "sword")
-        await asyncio.sleep(900)
+        await asyncio.sleep(20)
  
 client.loop.create_task(my_background_task())
 token = os.environ.get("DISCORD_BOT_SECRET")
