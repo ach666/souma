@@ -4,10 +4,6 @@ import time
 
 client = discord.Client()
 
-@client.event
-async def on_ready():
-  await client.change_presence(game=discord.Game(name="hanafuda"))
-
 async def my_background_task():
     await client.wait_until_ready()
     channel = discord.Object(id='531423912538537995')
