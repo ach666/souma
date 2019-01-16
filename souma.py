@@ -9,7 +9,7 @@ async def my_background_task():
     channel = discord.Object(id='531423912538537995')
     while not client.is_closed:
         await client.send_message(channel, "sword")
-        await asyncio.sleep(10) # task runs every 60 seconds
+        await asyncio.sleep(10)
 
 @client.event
 async def on_ready():
