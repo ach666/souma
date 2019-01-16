@@ -12,7 +12,7 @@ async def my_background_task():
     await client.wait_until_ready()
     channel = discord.Object(id='channel_id_here')
     while not client.is_closed:
-        await client.send_message(channel, "sword)
+        await client.send_message(channel, "sword")
         await asyncio.sleep(900)
  
 client.loop.create_task(my_background_task())
