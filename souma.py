@@ -6,10 +6,10 @@ client = discord.Client()
 
 async def my_background_task():
     await client.wait_until_ready()
-    channel = discord.Object(id='531423912538537995')
+    channel = discord.Object(id='542037405356523528')
     while not client.is_closed:
         await client.send_message(channel, "sword")
-        await asyncio.sleep(1800)
+        await asyncio.sleep(2000)
 
 @client.event
 async def on_ready():
