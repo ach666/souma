@@ -5,7 +5,7 @@ import random
 
 client = discord.Client()
 
-sayings = ["do not lament over the rotten souls of those you hath slain in thy battlefield", "you mean a lot  to me", "i will be  your samurai in times of darkness.", "adonith-dono hhot."]
+sayings = ["do not lament over the rotten souls of those you hath slain in thy battlefield", "you mean a lot  to me", "i will be  your samurai in times of darkness.", "adonith-dono hhot.", "you are always doing your best. I am proud of you", "you will reach your dreams with your own power, but i will be willing to help you along the way if you need.", "i shall give you my blessings for a long, fruitfull and fulfilling life."]
 
 async def my_background_task():
     await client.wait_until_ready()
