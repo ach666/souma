@@ -9,7 +9,7 @@ sayings = ["do not lament over the rotten souls of those you hath slain in thy b
 
 async def my_background_task():
     await client.wait_until_ready()
-    channel = discord.Object(id='562663990124085257')
+    channel = discord.Object(id='593497380918263808')
     while not client.is_closed:
         await client.send_message(channel, "take your meds")
         await client.send_message(channel, random.choice(sayings))
